@@ -1,4 +1,6 @@
-# Lumofy Task `[View](https://interview-taskes.vercel.app/)`
+# Lumofy Task
+
+[`View`](https://interview-taskes.vercel.app/)
 
 ## Task
 
