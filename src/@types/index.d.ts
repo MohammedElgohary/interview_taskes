@@ -2,8 +2,10 @@ export interface CourseInterface {
   id: string;
   title: string;
   description?: string;
-  image?: string;
+  thumbnail?: string;
+  duration: number;
+  isNew: boolean;
+  drafts: CourseInterface[];
   createdAt?: string;
   updatedAt?: string;
-  drafts: CourseInterface[];
 }

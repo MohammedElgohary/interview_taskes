@@ -28,6 +28,36 @@ export function BaseInput({
   defaultValue,
   ...props
 }: BaseInputProps) {
+  if (type === "switch")
+    return (
+      <>
+        <Label className="text-capitalize">{label}</Label>
+        <FormGroup className="mb-sm-3 mb-xs-3" switch>
+          <Controller
+            name={name}
+            control={control}
+            defaultValue={defaultValue}
+            rules={rules}
+            shouldUnregister
+            render={({ field, fieldState }) => (
+              <>
+                <Input
+                  type={type}
+                  placeholder={placeholder}
+                  checked={field.value}
+                  onChange={(e) => field.onChange(e.target.checked)}
+                  onBlur={field.onBlur}
+                  {...props}
+                />
+
+                <div className="text-danger">{fieldState?.error?.message}</div>
+              </>
+            )}
+          />
+        </FormGroup>
+      </>
+    );
+
   return (
     <>
       <FormGroup className="mb-sm-3 mb-xs-3">

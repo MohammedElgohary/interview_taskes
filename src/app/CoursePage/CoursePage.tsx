@@ -20,7 +20,7 @@ export default function CoursePage() {
         className="course-image"
         style={{
           backgroundImage: `url(${
-            course?.image || CONFIG.app.design.dummyImage
+            course?.thumbnail || CONFIG.app.design.dummyImage
           })`,
         }}
       ></div>

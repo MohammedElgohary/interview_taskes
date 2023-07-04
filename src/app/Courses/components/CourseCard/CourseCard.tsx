@@ -32,14 +32,14 @@ export default function CourseCard({
 }: CourseCardProps) {
   return (
     <>
-      <Col md={6} sm={12} xm={12} className="mb-4">
+      <Col md={6} sm={12} xm={12} className="mb-4 course-card">
         <Link
           to={{ pathname: CONFIG.urls.course.view(course) }}
           className="text-decoration-none"
         >
           <Card>
             <CardImg
-              src={course.image || CONFIG.app.design.dummyImage}
+              src={course.thumbnail || CONFIG.app.design.dummyImage}
               className="course-card-image"
               loading="lazy"
               alt="Card image cap"
@@ -47,6 +47,12 @@ export default function CourseCard({
             />
 
             <CardTitle className="p-3 d-flex justify-content-end gap-2 align-items-center">
+              {course.isNew && (
+                <Badge className="p-2" color="info">
+                  NEW
+                </Badge>
+              )}
+
               <span className="text-muted">Last update</span>
               <Badge className="p-2" color="success">
                 {new Date(

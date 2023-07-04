@@ -53,7 +53,12 @@ export default function CoursesForm({
               </Col>
 
               <Col md="12">
-                <BaseInput control={control} name="image" type="url" />
+                <BaseInput
+                  control={control}
+                  name="thumbnail"
+                  label="image"
+                  type="url"
+                />
               </Col>
 
               <Col md="12">
@@ -62,6 +67,19 @@ export default function CoursesForm({
                   name="description"
                   type="textarea"
                   rows={5}
+                />
+              </Col>
+
+              <Col md="6">
+                <BaseInput control={control} name="duration" type="number" />
+              </Col>
+
+              <Col md="6">
+                <BaseInput
+                  control={control}
+                  name="isNew"
+                  type="switch"
+                  label="is new"
                 />
               </Col>
             </Row>
