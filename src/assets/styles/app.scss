@@ -1,0 +1,55 @@
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1920px;
+  margin: 0px auto;
+}
+
+.overlay {
+  background-color: #00000050;
+  z-index: 9;
+}
+
+.modal-header {
+  h5 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.course-content-body {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 0 !important;
+}
+
+.notFoundPage {
+  height: 75vh;
+}
+
+.text-wrap {
+  word-break: break-all;
+}
+
+.course-image {
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  border-radius: 8px;
+}
+
+.course-card-image {
+  height: 250px;
+  object-fit: cover;
+  object-position: center center;
+}
