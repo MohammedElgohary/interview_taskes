@@ -1,7 +1,6 @@
-import { Controller, RegisterOptions } from "react-hook-form";
-import { FormGroup, Input, Label } from "reactstrap";
-
-import { InputType } from "reactstrap/types/lib/Input";
+import { Controller, RegisterOptions } from 'react-hook-form'
+import { FormGroup, Input, Label } from 'reactstrap'
+import { InputType } from 'reactstrap/types/lib/Input'
 
 export interface BaseInputProps {
   name: string;

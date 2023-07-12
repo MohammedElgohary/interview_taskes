@@ -1,8 +1,9 @@
-import App from "./app";
-import { CONFIG } from "./config";
-import { Button, Container } from "reactstrap";
-import { Link } from "react-router-dom";
-import { BiHomeAlt2 } from "react-icons/bi";
+import { Button, Container } from 'reactstrap'
+import { Link } from 'react-router-dom'
+import { BiHomeAlt2 } from 'react-icons/bi'
+
+import App from './app'
+import { CONFIG } from './config'
 
 export default function layout() {
   return (

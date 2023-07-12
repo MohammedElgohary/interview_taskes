@@ -1,7 +1,8 @@
-import { Button } from "reactstrap";
-import { Link } from "react-router-dom";
-import { CONFIG } from "../../config";
-import { Helmet } from "react-helmet-async";
+import { Button } from 'reactstrap'
+import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+
+import { CONFIG } from '../../config'
 
 export default function NotFound() {
   return (

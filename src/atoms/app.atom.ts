@@ -1,7 +1,8 @@
-import { CONFIG } from "../config";
-import { CourseInterface } from "../@types";
-import { atom } from "recoil";
-import { recoilPersist } from "recoil-persist";
+import { CourseInterface } from '../@types'
+import { atom } from 'recoil'
+import { recoilPersist } from 'recoil-persist'
+
+import { CONFIG } from '../config'
 
 const { persistAtom } = recoilPersist();
 

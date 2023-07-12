@@ -1,7 +1,8 @@
-import { useMemo } from "react";
-import { useParams } from "react-router-dom";
-import { useRecoilState } from "recoil";
-import { appAtom } from "../../atoms/app.atom";
+import { useMemo } from 'react'
+import { useParams } from 'react-router-dom'
+import { useRecoilState } from 'recoil'
+
+import { appAtom } from '../../atoms/app.atom'
 
 export function useCourseDate() {
   const params = useParams();

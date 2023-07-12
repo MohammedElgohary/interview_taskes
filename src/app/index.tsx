@@ -1,6 +1,7 @@
-import { lazy } from "react";
-import { Route, Routes } from "react-router-dom";
-import { CONFIG } from "../config";
+import { lazy } from 'react'
+import { Route, Routes } from 'react-router-dom'
+
+import { CONFIG } from '../config'
 
 const NotFound = lazy(() => import("./404"));
 const Courses = lazy(() => import("./Courses/Courses"));
