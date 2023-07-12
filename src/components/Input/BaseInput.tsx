@@ -44,7 +44,7 @@ export function BaseInput({
                 <Input
                   type={type}
                   placeholder={placeholder}
-                  checked={field.value}
+                  defaultChecked={field.value}
                   onChange={(e) => field.onChange(e.target.checked)}
                   onBlur={field.onBlur}
                   {...props}
@@ -74,7 +74,7 @@ export function BaseInput({
               <Input
                 type={type}
                 placeholder={placeholder}
-                value={field.value}
+                defaultValue={field.value}
                 onChange={(e) => field?.onChange(e.target.value)}
                 onBlur={field.onBlur}
                 {...props}

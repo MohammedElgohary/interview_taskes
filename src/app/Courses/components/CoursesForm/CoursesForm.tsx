@@ -1,17 +1,8 @@
-import {
-  Button,
-  CloseButton,
-  Col,
-  Modal,
-  ModalBody,
-  ModalFooter,
-  ModalHeader,
-  Row,
-} from "reactstrap";
+import { Button, CloseButton, Col, Modal, ModalBody, ModalFooter, ModalHeader, Row } from 'reactstrap'
+import { CourseInterface } from '../../../../@types'
 
-import { BaseInput } from "../../../../components/Input/BaseInput";
-import { CourseInterface } from "../../../../@types";
-import { useCourseFrom } from "./useCourseFrom";
+import { BaseInput } from '../../../../components/Input/BaseInput'
+import { useCourseFrom } from './useCourseFrom'
 
 export interface CoursesFormProps {
   onClose: () => void;

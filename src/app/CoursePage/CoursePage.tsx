@@ -5,7 +5,7 @@ import CourseCard from "../Courses/components/CourseCard/CourseCard";
 import { Button, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function CoursePage() {
   const { course, isChild, parentId } = useCourseDate();

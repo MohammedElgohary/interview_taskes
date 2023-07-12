@@ -1,9 +1,9 @@
-import { useCallback, useMemo, useState } from "react";
+import Swal from 'sweetalert2'
+import { useCallback, useMemo, useState } from 'react'
+import { CourseInterface } from '../../@types'
+import { useRecoilState } from 'recoil'
 
-import { CourseInterface } from "../../@types";
-import Swal from "sweetalert2";
-import { appAtom } from "../../atoms/app.atom";
-import { useRecoilState } from "recoil";
+import { appAtom } from '../../atoms/app.atom'
 
 export interface useCoursesProps {
   open?: boolean;
@@ -84,19 +84,17 @@ export function useCourses({ open = false }: useCoursesProps) {
 
   const createCourse = useCallback(
     (newCourse: CourseInterface) => {
-      const newCourses = [
-        ...state.courses,
-        {
-          ...newCourse,
-          id: new Date().getTime(),
-          createdAt: new Date().toJSON(),
-          drafts: [] as CourseInterface[],
-        },
-      ];
-
       setState({
         ...state,
-        courses: newCourses as CourseInterface[],
+        courses: [
+          ...state.courses,
+          {
+            ...newCourse,
+            id: new Date().getTime(),
+            createdAt: new Date().toJSON(),
+            drafts: [] as CourseInterface[],
+          },
+        ] as CourseInterface[],
       });
     },
     [setState, state]

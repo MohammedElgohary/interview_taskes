@@ -1,16 +1,15 @@
-import { Button, Col, Input, Row } from "reactstrap";
+import { Button, Col, Input, Row } from 'reactstrap'
+import { AiOutlinePlus } from 'react-icons/ai'
+import { CourseInterface } from '../../@types'
+import { Helmet } from 'react-helmet-async'
 
-import { AiOutlinePlus } from "react-icons/ai";
-import CourseCard from "./components/CourseCard/CourseCard";
-import { CourseInterface } from "../../@types";
-import { useCourses } from "./useCourses";
+import CourseCard from './components/CourseCard/CourseCard'
+import CoursesFrom from './components/CoursesForm'
+import { useCourses } from './useCourses'
 
 /***
  * Import `CoursesForm`
  */
-import CoursesFrom from "./components/CoursesForm";
-import { Helmet } from "react-helmet";
-
 export default function Courses() {
   const {
     courses,

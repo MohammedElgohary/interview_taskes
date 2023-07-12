@@ -1,19 +1,10 @@
-import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
-import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardImg,
-  CardTitle,
-  Col,
-} from "reactstrap";
+import React from 'react'
+import { AiOutlineDelete, AiOutlineEdit } from 'react-icons/ai'
+import { Badge, Button, Card, CardBody, CardFooter, CardImg, CardTitle, Col } from 'reactstrap'
+import { CourseInterface } from '../../../../@types'
+import { Link } from 'react-router-dom'
 
-import { CourseInterface } from "../../../../@types";
-import React from "react";
-import { Link } from "react-router-dom";
-import { CONFIG } from "../../../../config";
+import { CONFIG } from '../../../../config'
 
 export interface CourseCardProps {
   course: CourseInterface;
